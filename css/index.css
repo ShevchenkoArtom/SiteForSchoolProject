@@ -1,0 +1,245 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *::before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #f0f0f0;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  cursor: pointer;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+button {
+  background: transparent;
+}
+
+.header .container {
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header .object__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header .object__wrapper h1 {
+  font-size: 30px;
+}
+.header .object__wrapper nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px 40px;
+}
+.header .object__wrapper nav ul a {
+  color: black;
+  font-size: 18px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.header .object__wrapper nav ul a:hover {
+  color: #001ea5;
+}
+.header .object__wrapper nav ul a._IsChosen {
+  color: #001ea5;
+}
+.header .options {
+  margin-top: 50px;
+}
+.header .options h2 {
+  font-size: 25px;
+}
+.header .options ul {
+  margin-top: 30px;
+  max-width: 500px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 10px 1fr 10px 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+.header .options ul > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.header .options ul > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.header .options ul > *:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.header .options ul > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+.header .options ul > *:nth-child(5) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+.header .options ul > *:nth-child(6) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+.header .options ul li {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+  font-size: 16px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+.header .options ul li a {
+  color: black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  padding: 10px 70px 10px 70px;
+}
+.header .options ul li:hover {
+  border: 2px solid #001ea5;
+}
+.header .options ul li:hover a {
+  color: #001ea5;
+}
+
+.main {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.main .container {
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.main .section h2 {
+  font-size: 25px;
+}
+.main .section .article__top {
+  margin-top: 30px;
+}
+.main .section .article__top p {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.main .section .article__top p.l {
+  margin-top: 20px;
+}
+
+article.tables {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 20px 1fr;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+
+.exercise {
+  border: 1px solid black;
+}
+.exercise td {
+  padding: 10px;
+  margin: 0;
+  border-bottom: 1px solid black;
+}
+.exercise td.td__title {
+  font-size: 18px;
+}
+.exercise td.red {
+  background-color: #ff7d7d;
+}
+.exercise td.orange {
+  background-color: #ffd667;
+}
+.exercise td.green {
+  background-color: #96ff65;
+}
+
+.article__bottom {
+  margin-top: 50px;
+}
+.article__bottom p {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.noPage {
+  position: absolute;
+  font-size: 400px;
+  color: #838383;
+  left: calc(50% - 335px);
+  top: calc(50% - 200px);
+}
